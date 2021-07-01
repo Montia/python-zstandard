@@ -92,7 +92,7 @@ if not version:
     )
 
 setup(
-    name="zstandard",
+    name="zstandard2",
     version=version,
     description="Zstandard bindings for Python",
     long_description=open("README.rst", "r").read(),
