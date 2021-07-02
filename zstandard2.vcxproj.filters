@@ -138,6 +138,9 @@
     <ClInclude Include="zstd\legacy\zstd_legacy.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="zstd\zstd.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="c-ext\bufferutil.c">

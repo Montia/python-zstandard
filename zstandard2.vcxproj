@@ -189,6 +189,7 @@
     <ClInclude Include="zstd\legacy\zstd_v05.h" />
     <ClInclude Include="zstd\legacy\zstd_v06.h" />
     <ClInclude Include="zstd\legacy\zstd_v07.h" />
+    <ClInclude Include="zstd\zstd.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="c-ext\bufferutil.c" />
