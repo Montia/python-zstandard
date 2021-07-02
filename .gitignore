@@ -10,3 +10,6 @@ dist/
 venv/
 venv3/
 zstandard.egg-info/
+x64/
+t.py
+tmp.py

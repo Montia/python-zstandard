@@ -1,0 +1,312 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="c-ext\python-zstandard.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="zstd\common\zstd_internal.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="zstd\common\zstd_errors.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="zstd\common\xxhash.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="zstd\common\threading.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="zstd\common\pool.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="zstd\common\mem.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="zstd\common\huf.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="zstd\common\fse.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="zstd\common\error_private.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="zstd\common\debug.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="zstd\common\cpu.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="zstd\common\compiler.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="zstd\common\bitstream.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="zstd\compress\zstdmt_compress.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="zstd\compress\zstd_opt.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="zstd\compress\zstd_ldm.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="zstd\compress\zstd_lazy.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="zstd\compress\zstd_fast.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="zstd\compress\zstd_double_fast.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="zstd\compress\zstd_cwksp.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="zstd\compress\zstd_compress_superblock.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="zstd\compress\zstd_compress_sequences.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="zstd\compress\zstd_compress_literals.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="zstd\compress\zstd_compress_internal.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="zstd\compress\hist.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="zstd\decompress\zstd_decompress_internal.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="zstd\decompress\zstd_decompress_block.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="zstd\decompress\zstd_ddict.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="zstd\deprecated\zbuff.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="zstd\dictBuilder\zdict.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="zstd\dictBuilder\divsufsort.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="zstd\dictBuilder\cover.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="zstd\legacy\zstd_v07.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="zstd\legacy\zstd_v06.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="zstd\legacy\zstd_v05.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="zstd\legacy\zstd_v04.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="zstd\legacy\zstd_v03.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="zstd\legacy\zstd_v02.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="zstd\legacy\zstd_v01.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="zstd\legacy\zstd_legacy.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="c-ext\bufferutil.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="c-ext\compressionchunker.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="c-ext\compressiondict.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="c-ext\compressionparams.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="c-ext\compressionreader.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="c-ext\compressionwriter.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="c-ext\compressobj.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="c-ext\compressor.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="c-ext\compressoriterator.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="c-ext\constants.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="c-ext\decompressionreader.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="c-ext\decompressionwriter.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="c-ext\decompressobj.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="c-ext\decompressor.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="c-ext\decompressoriterator.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="c-ext\frameparams.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="zstd\common\debug.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="zstd\common\entropy_common.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="zstd\common\error_private.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="zstd\common\fse_decompress.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="zstd\common\pool.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="zstd\common\threading.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="zstd\common\xxhash.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="zstd\common\zstd_common.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="zstd\compress\fse_compress.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="zstd\compress\hist.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="zstd\compress\huf_compress.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="zstd\compress\zstd_compress.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="zstd\compress\zstd_compress_literals.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="zstd\compress\zstd_compress_sequences.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="zstd\compress\zstd_compress_superblock.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="zstd\compress\zstd_double_fast.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="zstd\compress\zstd_fast.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="zstd\compress\zstd_lazy.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="zstd\compress\zstd_ldm.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="zstd\compress\zstd_opt.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="zstd\compress\zstdmt_compress.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="zstd\decompress\huf_decompress.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="zstd\decompress\zstd_ddict.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="zstd\decompress\zstd_decompress.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="zstd\decompress\zstd_decompress_block.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="zstd\deprecated\zbuff_common.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="zstd\deprecated\zbuff_compress.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="zstd\deprecated\zbuff_decompress.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="zstd\dictBuilder\cover.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="zstd\dictBuilder\divsufsort.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="zstd\dictBuilder\fastcover.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="zstd\dictBuilder\zdict.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="zstd\legacy\zstd_v01.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="zstd\legacy\zstd_v02.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="zstd\legacy\zstd_v03.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="zstd\legacy\zstd_v04.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="zstd\legacy\zstd_v05.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="zstd\legacy\zstd_v06.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="zstd\legacy\zstd_v07.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="zstd.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

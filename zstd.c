@@ -260,10 +260,11 @@ PYTHON_ZSTD_VISIBILITY PyMODINIT_FUNC PyInit_zstd(void) {
 	return m;
 }
 #else
-PYTHON_ZSTD_VISIBILITY PyMODINIT_FUNC initzstd(void) {
-	PyObject *m = Py_InitModule3("zstd", zstd_methods, zstd_doc);
+PYTHON_ZSTD_VISIBILITY PyMODINIT_FUNC initzstandard2(void) {
+	PyObject *m = Py_InitModule3("zstandard2", zstd_methods, zstd_doc);
 	if (m) {
 		zstd_module_init(m);
+		PyModule_AddStringConstant(m, "hello", "world");
 	}
 }
 #endif

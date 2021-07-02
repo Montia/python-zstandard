@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{3dd84e6c-e3b2-4589-bb60-805a83b9d1d5}</ProjectGuid>
+    <RootNamespace>zstandard2</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+    <TargetExt>.pyd</TargetExt>
+    <OutDir>..\Lib\site-packages</OutDir>
+    <TargetName>$(ProjectName)_d</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>..\Lib\site-packages</OutDir>
+    <TargetExt>.pyd</TargetExt>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>false</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>E:\Python-2.7.18\PC;E:\Python-2.7.18\zstandard2\zstd;E:\Python-2.7.18\zstandard2;E:\Python-2.7.18\Include;E:\Python-2.7.18\zstandard2\zstd\legacy;E:\Python-2.7.18\zstandard2\zstd\dictBuilder;E:\Python-2.7.18\zstandard2\zstd\deprecated;E:\Python-2.7.18\zstandard2\zstd\decompress;E:\Python-2.7.18\zstandard2\zstd\compress;E:\Python-2.7.18\zstandard2\zstd\common;E:\Python-2.7.18\zstandard2\c-ext;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>E:\Python-2.7.18\PCbuild\amd64;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>false</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>E:\Python-2.7.18\PC;E:\Python-2.7.18\zstandard2\zstd;E:\Python-2.7.18\zstandard2;E:\Python-2.7.18\Include;E:\Python-2.7.18\zstandard2\zstd\legacy;E:\Python-2.7.18\zstandard2\zstd\dictBuilder;E:\Python-2.7.18\zstandard2\zstd\deprecated;E:\Python-2.7.18\zstandard2\zstd\decompress;E:\Python-2.7.18\zstandard2\zstd\compress;E:\Python-2.7.18\zstandard2\zstd\common;E:\Python-2.7.18\zstandard2\c-ext;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>E:\Python-2.7.18\PCbuild\amd64;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="c-ext\python-zstandard.h" />
+    <ClInclude Include="zstd\common\bitstream.h" />
+    <ClInclude Include="zstd\common\compiler.h" />
+    <ClInclude Include="zstd\common\cpu.h" />
+    <ClInclude Include="zstd\common\debug.h" />
+    <ClInclude Include="zstd\common\error_private.h" />
+    <ClInclude Include="zstd\common\fse.h" />
+    <ClInclude Include="zstd\common\huf.h" />
+    <ClInclude Include="zstd\common\mem.h" />
+    <ClInclude Include="zstd\common\pool.h" />
+    <ClInclude Include="zstd\common\threading.h" />
+    <ClInclude Include="zstd\common\xxhash.h" />
+    <ClInclude Include="zstd\common\zstd_errors.h" />
+    <ClInclude Include="zstd\common\zstd_internal.h" />
+    <ClInclude Include="zstd\compress\hist.h" />
+    <ClInclude Include="zstd\compress\zstdmt_compress.h" />
+    <ClInclude Include="zstd\compress\zstd_compress_internal.h" />
+    <ClInclude Include="zstd\compress\zstd_compress_literals.h" />
+    <ClInclude Include="zstd\compress\zstd_compress_sequences.h" />
+    <ClInclude Include="zstd\compress\zstd_compress_superblock.h" />
+    <ClInclude Include="zstd\compress\zstd_cwksp.h" />
+    <ClInclude Include="zstd\compress\zstd_double_fast.h" />
+    <ClInclude Include="zstd\compress\zstd_fast.h" />
+    <ClInclude Include="zstd\compress\zstd_lazy.h" />
+    <ClInclude Include="zstd\compress\zstd_ldm.h" />
+    <ClInclude Include="zstd\compress\zstd_opt.h" />
+    <ClInclude Include="zstd\decompress\zstd_ddict.h" />
+    <ClInclude Include="zstd\decompress\zstd_decompress_block.h" />
+    <ClInclude Include="zstd\decompress\zstd_decompress_internal.h" />
+    <ClInclude Include="zstd\deprecated\zbuff.h" />
+    <ClInclude Include="zstd\dictBuilder\cover.h" />
+    <ClInclude Include="zstd\dictBuilder\divsufsort.h" />
+    <ClInclude Include="zstd\dictBuilder\zdict.h" />
+    <ClInclude Include="zstd\legacy\zstd_legacy.h" />
+    <ClInclude Include="zstd\legacy\zstd_v01.h" />
+    <ClInclude Include="zstd\legacy\zstd_v02.h" />
+    <ClInclude Include="zstd\legacy\zstd_v03.h" />
+    <ClInclude Include="zstd\legacy\zstd_v04.h" />
+    <ClInclude Include="zstd\legacy\zstd_v05.h" />
+    <ClInclude Include="zstd\legacy\zstd_v06.h" />
+    <ClInclude Include="zstd\legacy\zstd_v07.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="c-ext\bufferutil.c" />
+    <ClCompile Include="c-ext\compressionchunker.c" />
+    <ClCompile Include="c-ext\compressiondict.c" />
+    <ClCompile Include="c-ext\compressionparams.c" />
+    <ClCompile Include="c-ext\compressionreader.c" />
+    <ClCompile Include="c-ext\compressionwriter.c" />
+    <ClCompile Include="c-ext\compressobj.c" />
+    <ClCompile Include="c-ext\compressor.c" />
+    <ClCompile Include="c-ext\compressoriterator.c" />
+    <ClCompile Include="c-ext\constants.c" />
+    <ClCompile Include="c-ext\decompressionreader.c" />
+    <ClCompile Include="c-ext\decompressionwriter.c" />
+    <ClCompile Include="c-ext\decompressobj.c" />
+    <ClCompile Include="c-ext\decompressor.c" />
+    <ClCompile Include="c-ext\decompressoriterator.c" />
+    <ClCompile Include="c-ext\frameparams.c" />
+    <ClCompile Include="zstd.c" />
+    <ClCompile Include="zstd\common\debug.c" />
+    <ClCompile Include="zstd\common\entropy_common.c" />
+    <ClCompile Include="zstd\common\error_private.c" />
+    <ClCompile Include="zstd\common\fse_decompress.c" />
+    <ClCompile Include="zstd\common\pool.c" />
+    <ClCompile Include="zstd\common\threading.c" />
+    <ClCompile Include="zstd\common\xxhash.c" />
+    <ClCompile Include="zstd\common\zstd_common.c" />
+    <ClCompile Include="zstd\compress\fse_compress.c" />
+    <ClCompile Include="zstd\compress\hist.c" />
+    <ClCompile Include="zstd\compress\huf_compress.c" />
+    <ClCompile Include="zstd\compress\zstdmt_compress.c" />
+    <ClCompile Include="zstd\compress\zstd_compress.c" />
+    <ClCompile Include="zstd\compress\zstd_compress_literals.c" />
+    <ClCompile Include="zstd\compress\zstd_compress_sequences.c" />
+    <ClCompile Include="zstd\compress\zstd_compress_superblock.c" />
+    <ClCompile Include="zstd\compress\zstd_double_fast.c" />
+    <ClCompile Include="zstd\compress\zstd_fast.c" />
+    <ClCompile Include="zstd\compress\zstd_lazy.c" />
+    <ClCompile Include="zstd\compress\zstd_ldm.c" />
+    <ClCompile Include="zstd\compress\zstd_opt.c" />
+    <ClCompile Include="zstd\decompress\huf_decompress.c" />
+    <ClCompile Include="zstd\decompress\zstd_ddict.c" />
+    <ClCompile Include="zstd\decompress\zstd_decompress.c" />
+    <ClCompile Include="zstd\decompress\zstd_decompress_block.c" />
+    <ClCompile Include="zstd\deprecated\zbuff_common.c" />
+    <ClCompile Include="zstd\deprecated\zbuff_compress.c" />
+    <ClCompile Include="zstd\deprecated\zbuff_decompress.c" />
+    <ClCompile Include="zstd\dictBuilder\cover.c" />
+    <ClCompile Include="zstd\dictBuilder\divsufsort.c" />
+    <ClCompile Include="zstd\dictBuilder\fastcover.c" />
+    <ClCompile Include="zstd\dictBuilder\zdict.c" />
+    <ClCompile Include="zstd\legacy\zstd_v01.c" />
+    <ClCompile Include="zstd\legacy\zstd_v02.c" />
+    <ClCompile Include="zstd\legacy\zstd_v03.c" />
+    <ClCompile Include="zstd\legacy\zstd_v04.c" />
+    <ClCompile Include="zstd\legacy\zstd_v05.c" />
+    <ClCompile Include="zstd\legacy\zstd_v06.c" />
+    <ClCompile Include="zstd\legacy\zstd_v07.c" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
